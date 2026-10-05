@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Прайс-лист на разработку сайта</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  --bg:#f5f5f7; --surface:#fff; --text:#1d1d1f; --muted:#6e6e73; --border:#e5e5ea;
+  --green:#16a34a;
+  --shadow:0 1px 4px rgba(0,0,0,.06), 0 0 0 1px rgba(0,0,0,.05);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:36px 20px 70px}
+h1{font-size:2rem;font-weight:700;letter-spacing:-.02em}
+.sub{color:var(--muted);margin:6px 0 28px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:38px}
+.card{background:var(--surface);border-radius:20px;box-shadow:var(--shadow);padding:24px;display:flex;flex-direction:column;border-left:4px solid var(--c)}
+.tag{display:inline-flex;gap:6px;align-items:center;font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:99px;background:color-mix(in srgb,var(--c) 12%,transparent);color:var(--c);align-self:flex-start}
+.card h2{font-size:1.25rem;margin:12px 0 4px}
+.desc{color:var(--muted);font-size:.9rem;margin-bottom:14px}
+.price{font-size:2.3rem;font-weight:700;letter-spacing:-.02em}
+.meta{display:flex;gap:14px;font-size:.8rem;color:var(--muted);margin:6px 0 16px;flex-wrap:wrap}
+.meta i{margin-right:5px}
+ul.f{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:.9rem}
+ul.f li{display:flex;gap:10px}
+ul.f li i{margin-top:4px;font-size:.8rem}
+ul.f li.yes i{color:var(--green)}
+ul.f li.no{color:#a1a1a6}
+ul.f li.no i{color:#c7c7cc}
+h2.sec{font-size:1.3rem;margin-bottom:14px}
+.addons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+.add{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.add .top{display:flex;gap:12px;align-items:center}
+.ic{width:42px;height:42px;border-radius:12px;background:rgba(99,102,241,.1);color:#6366f1;display:grid;place-items:center;font-size:1.1rem;flex-shrink:0}
+.add b{font-size:.95rem}
+.add span{font-size:.82rem;color:var(--muted)}
+.add .p{font-size:1.2rem;font-weight:700}
+.note{font-size:.8rem;color:var(--muted)}
+@media(max-width:900px){.grid,.addons{grid-template-columns:1fr}}
+@media print{body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Прайс-лист на разработку сайта</h1>
+  <p class="sub">Сайт для привлечения иностранных специалистов в Кыргызстан: кандидаты из Индонезии и других стран, вакансии, заявки.</p>
+
+  <div class="grid">
+    <div class="card" style="--c:#6366f1">
+      <span class="tag"><i class="fa-solid fa-rocket"></i>Старт</span>
+      <h2>Сайт-визитка</h2>
+      <p class="desc">Лендинг для быстрого запуска и приёма заявок.</p>
+      <div class="price">300 $</div>
+      <div class="meta"><span><i class="fa-regular fa-clock"></i>5–7 дней</span><span><i class="fa-regular fa-file"></i>1–3 страницы</span></div>
+      <ul class="f">
+        <li class="yes"><i class="fa-solid fa-check"></i>Адаптивный дизайн под телефон</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>2 языка (английский и русский)</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Форма заявки для кандидатов</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Уведомления в Telegram или на почту</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Блок «Как это работает» и отзывы</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Базовое SEO</li>
+        <li class="no"><i class="fa-solid fa-xmark"></i>Админ-панель</li>
+        <li class="no"><i class="fa-solid fa-xmark"></i>База кандидатов и вакансий</li>
+        <li class="no"><i class="fa-solid fa-xmark"></i>Личные кабинеты</li>
+      </ul>
+    </div>
+
+    <div class="card" style="--c:#9333ea">
+      <span class="tag"><i class="fa-solid fa-building"></i>Бизнес</span>
+      <h2>Сайт с базовой админкой</h2>
+      <p class="desc">Многостраничный сайт, где контент меняется без программиста.</p>
+      <div class="price">800 $</div>
+      <div class="meta"><span><i class="fa-regular fa-clock"></i>2–3 недели</span><span><i class="fa-regular fa-file"></i>до 8 страниц</span></div>
+      <ul class="f">
+        <li class="yes"><i class="fa-solid fa-check"></i>Всё из пакета «Старт»</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>До 3 языков (английский, русский, индонезийский)</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Админка: вакансии, новости, отзывы, FAQ</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Заявки сохраняются, есть статусы</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Каталог вакансий с фильтрами</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Страницы по странам и профессиям</li>
+        <li class="no"><i class="fa-solid fa-xmark"></i>Личные кабинеты кандидатов</li>
+        <li class="no"><i class="fa-solid fa-xmark"></i>Загрузка документов</li>
+        <li class="no"><i class="fa-solid fa-xmark"></i>Роли и права доступа</li>
+      </ul>
+    </div>
+
+    <div class="card" style="--c:#16a34a">
+      <span class="tag"><i class="fa-solid fa-layer-group"></i>Платформа</span>
+      <h2>Сайт с полной админкой</h2>
+      <p class="desc">Полноценная система подбора: кандидаты, работодатели, документы.</p>
+      <div class="price">1 200 $</div>
+      <div class="meta"><span><i class="fa-regular fa-clock"></i>4–6 недель</span><span><i class="fa-regular fa-file"></i>без ограничений</span></div>
+      <ul class="f">
+        <li class="yes"><i class="fa-solid fa-check"></i>Всё из пакета «Бизнес»</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Личный кабинет кандидата и работодателя</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Анкета с загрузкой документов и фото</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>База кандидатов: поиск, фильтры, воронка</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Роли: администратор, менеджер, работодатель</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Статусы заявок и история общения</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Экспорт в Excel и PDF, аналитика</li>
+        <li class="yes"><i class="fa-solid fa-check"></i>Безопасное хранение данных</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="sec">Дополнительные опции</h2>
+  <div class="addons">
+    <div class="add">
+      <div class="top"><div class="ic"><i class="fa-solid fa-language"></i></div><div><b>Дополнительный язык</b><br><span>за каждый язык сверх пакета</span></div></div>
+      <div class="p">80 $</div>
+    </div>
+    <div class="add">
+      <div class="top"><div class="ic"><i class="fa-solid fa-headset"></i></div><div><b>Поддержка</b><br><span>правки, обновления, мелкие доработки, 1 месяц</span></div></div>
+      <div class="p">50 $ <span>/ месяц</span></div>
+    </div>
+    <div class="add">
+      <div class="top"><div class="ic"><i class="fa-solid fa-diagram-project"></i></div><div><b>Интеграция с CRM</b><br><span>передача заявок в вашу CRM</span></div></div>
+      <div class="p">250 $</div>
+    </div>
+  </div>
+
+  <p class="note">Цены ориентировочные, окончательная стоимость фиксируется после согласования технического задания. Оплата: 50% предоплата, 50% после сдачи.</p>
+</div>
+</body>
+</html>
